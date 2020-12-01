@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:layout_margin="10sp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:layout_margin="10sp"
+                android:id="@+id/first"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/acc"
+                    android:text="Accelerometer:"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/xval"
+                    android:text="X:"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:id="@+id/x_val"
+                    android:hint="X value"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/yval"
+                    android:layout_margin="2dp"
+                    android:text="Y:"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/y_val"
+                    android:layout_margin="2dp"
+                    android:hint="Y value"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/zval"
+                    android:layout_margin="2dp"
+                    android:text="Z:"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/z_val"
+                    android:layout_margin="2dp"
+                    android:hint="Z value"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:layout_margin="10sp"
+                android:id="@+id/second"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gyro"
+                    android:text="Gyrometer:"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gxval"
+                    android:text="X:"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:id="@+id/gx_val"
+                    android:hint="X value"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gyval"
+                    android:layout_margin="2dp"
+                    android:text="Y:"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gy_val"
+                    android:layout_margin="2dp"
+                    android:hint="Y value"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gzval"
+                    android:layout_margin="2dp"
+                    android:text="Z:"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gz_val"
+                    android:layout_margin="2dp"
+                    android:hint="Z value"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:layout_margin="10sp"
+                android:id="@+id/third"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/magno"
+                    android:text="Magnometer:"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mxval"
+                    android:text="X:"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:id="@+id/mx_val"
+                    android:hint="X value"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/myval"
+                    android:layout_margin="2dp"
+                    android:text="Y:"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/my_val"
+                    android:layout_margin="2dp"
+                    android:hint="Y value"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mzval"
+                    android:layout_margin="2dp"
+                    android:text="Z:"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mz_val"
+                    android:layout_margin="2dp"
+                    android:hint="Z value"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:layout_margin="10sp"
+                android:id="@+id/fourth"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/light"
+                    android:text="Light Sensor:"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lval"
+                    android:text="lumens:"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:id="@+id/l_val"
+                    android:hint="lumen value"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:layout_margin="10sp"
+                android:id="@+id/fifth"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/humi"
+                    android:text="Humidity Sensor:"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hval"
+                    android:text="Humidity:"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:id="@+id/h_val"
+                    android:hint="humidity value"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:layout_margin="10sp"
+                android:id="@+id/sixth"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pressure"
+                    android:text="Pressure Sensor:"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pval"
+                    android:text="pressure value:"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:id="@+id/p_val"
+                    android:hint="pressure value"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/seven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:onClick="stopRecording"
+                android:orientation="vertical"
+                android:padding="10sp">
+
+                <TextView
+                    android:id="@+id/temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Temperature Sensor:"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="temp:"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/t_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:hint="temp value" />
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/subID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="SubjectID" />
+
+            <Button
+                android:id="@+id/savebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stop" />
+
+            <Button
+                android:id="@+id/strbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start" />
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
